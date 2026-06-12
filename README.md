@@ -69,6 +69,23 @@ Hermes Agent 的设计目标不是"一次性地完成任务"，而是**每一次
 
 ---
 
+## 🛠️ 配套工具
+
+方法论不是纸上谈兵。每个文档都有对应的**可执行脚本**，实现方法论中描述的核心机制。
+
+| 方法论 | 工具数 | 入口 |
+|--------|--------|------|
+| CONSTITUTION | 2 | 敏感信息扫描、pre-commit hook |
+| OPERATIONS | 4 | 飞书自检、Flask清理、锁文件检测、健康检查 |
+| EVOLUTION-ENGINE | 2 | 信息爬虫+评分、Skill频率分析 |
+| KNOWLEDGE-CRYSTALLIZATION | 2 | E→N→P蒸馏、知识衰减管理 |
+| SPEC-DRIVEN-DEV | 1 | 10维歧义扫描 |
+| MULTI-AGENT-COORDINATION | 2 | 三级审核判定、产前验证 |
+
+👉 **[查看完整工具目录 →](tools/README.md)**
+
+---
+
 ## 🔑 四个关键设计原则
 
 1. **棘轮效应** — 能力只能前进，不能后退
