@@ -23,7 +23,8 @@
 | 5 | [**MULTI-AGENT-COORDINATION.md**](./MULTI-AGENT-COORDINATION.md) | 多 Agent 如何协作而不混乱？ |
 | 6 | [**KNOWLEDGE-CRYSTALLIZATION.md**](./KNOWLEDGE-CRYSTALLIZATION.md) | 经验如何从对话变成永久知识？ |
 | 7 | [**EXPERIENCE-LIFECYCLE.md**](./EXPERIENCE-LIFECYCLE.md) | 经验的完整生-存-用循环？ |
-| 8 | [**OPERATIONS.md**](./OPERATIONS.md) | 实际环境中的踩坑经验与操作守则 |
+| 8 | [**ALERTING-MONITORING.md**](./ALERTING-MONITORING.md) | 如何监控自身并自动告警自愈？ |
+| 9 | [**OPERATIONS.md**](./OPERATIONS.md) | 实际环境中的踩坑经验与操作守则 |
 
 ---
 
