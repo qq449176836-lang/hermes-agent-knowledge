@@ -36,6 +36,7 @@ bash tools/constitution/pre-commit-hook.sh --install
 | [`flask-cleanup.ps1`](operations/flask-cleanup.ps1) | PowerShell | Windows Flask 多进程残留清理 |
 | [`lockfile-check.sh`](operations/lockfile-check.sh) | Bash | 锁文件检测与清理（7 类锁 + --clean） |
 | [`health-check.sh`](operations/health-check.sh) | Bash | 系统健康检查（Gateway/端口/Cron/磁盘/日志） |
+| [`session-checklist/`](operations/session-checklist/) | Hermes Skill | 会话启动检查点（三层检索·棘轮循环·Evolution Engine） |
 
 **用法示例：**
 ```bash
@@ -84,6 +85,7 @@ python tools/evolution/usage-stats.py --apply
 |------|------|------|
 | [`distiller.py`](crystallization/distiller.py) | Python | E→N→P 三层蒸馏引擎 |
 | [`decay-manager.py`](crystallization/decay-manager.py) | Python | 知识衰减管理（过期/降级/归档） |
+| [`context-squeezer/`](crystallization/context-squeezer/) | Python | 上下文压缩引擎（5 种模式 + CCR 缓存 + auto 检测） |
 
 **用法示例：**
 ```bash
@@ -98,6 +100,12 @@ python tools/crystallization/decay-manager.py --target all --dry-run
 
 # 执行衰减清理
 python tools/crystallization/decay-manager.py --target skill --apply
+
+# 压缩冗余上下文
+python tools/crystallization/context-squeezer/squeezer.py --mode auto input.txt
+
+# 强制 SmartCrusher 模式
+python tools/crystallization/context-squeezer/squeezer.py --mode crusher input.txt
 ```
 
 ---
@@ -142,12 +150,12 @@ python tools/coordination/preflight-check.py --paths /c/foo/bar --files file1.py
 | 方法论文档 | 配套工具数 | 脚本语言 |
 |-----------|-----------|---------|
 | CONSTITUTION | 2 | Python + Bash |
-| OPERATIONS | 4 | Bash + PowerShell |
+| OPERATIONS | 5 | Bash + PowerShell + Skill |
 | EVOLUTION-ENGINE | 2 | Python |
-| KNOWLEDGE-CRYSTALLIZATION | 2 | Python |
+| KNOWLEDGE-CRYSTALLIZATION | 3 | Python |
 | SPEC-DRIVEN-DEV | 1 | Python |
 | MULTI-AGENT-COORDINATION | 2 | Python |
-| **总计** | **13** | |
+| **总计** | **15** | |
 
 ---
 
