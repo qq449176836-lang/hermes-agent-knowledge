@@ -76,9 +76,9 @@ Hermes Agent 的设计目标不是"一次性地完成任务"，而是**每一次
 | 方法论 | 工具数 | 入口 |
 |--------|--------|------|
 | CONSTITUTION | 2 | 敏感信息扫描、pre-commit hook |
-| OPERATIONS | 4 | 飞书自检、Flask清理、锁文件检测、健康检查 |
+| OPERATIONS | 5 | 飞书自检、Flask清理、锁文件检测、健康检查、会话检查点 |
 | EVOLUTION-ENGINE | 2 | 信息爬虫+评分、Skill频率分析 |
-| KNOWLEDGE-CRYSTALLIZATION | 2 | E→N→P蒸馏、知识衰减管理 |
+| KNOWLEDGE-CRYSTALLIZATION | 3 | E→N→P蒸馏、知识衰减管理、上下文压缩 |
 | SPEC-DRIVEN-DEV | 1 | 10维歧义扫描 |
 | MULTI-AGENT-COORDINATION | 2 | 三级审核判定、产前验证 |
 
